@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Description de la page">
+        <meta name="keywords" content="mots-clés de la page">
+        <meta name="author" content="Nom de l'auteur">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEBSITE</title>
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+       <!-- HEADER : En-tete du site -->
+        <header role="banner">
+
+            <!-- NAV : Barre / menu de navigation -->
+            <nav role="navigation" aria-label="Menu principal">
+                <ul>
+                    <li id="logo"><img src="./img/screen.png" alt="logo"></li>
+                    <li>Nom du site Web</li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- MAIN : Contenu  principal -->
+        <main role="main">
+
+            <div id="banner" role="banner">
+                <p class="banner__title">BANNER codé avec la méthode Block Element Modifier (BEM)</p>
+                <div class="banner__content">
+                    <a class="banner__button banner__button--primary" href="#">Bouton primaire</a>
+                    <a class="banner__button banner__button--secondary" href="#">Bouton secondaire</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- ARTICLE : Article 1 -->
+            <article role="article">
+
+                <!-- HEADER : en-tête de l'article -->
+                <header>
+                    <h2 contenteditable="true">Header article n°1</h2>
+                </header>
+
+                <!-- SECTION : Section de l'article -->
+                <section>
+                    <h3>Section 1</h3>
+                    <p><strong>Contenu</strong> <span>de</span> la section n°1 de l'article n°1.</p>
+                    <figure>
+                        <img src="./img/shopping.png" alt="shopping">
+                    </figure>
+                </section>
+
+                <!-- SECTION : autre  Section de l'article -->
+                <section>
+                    <h3>Section 2</h3>
+                    <p>Contenu de la section n°2 de l'article n°1.</p>
+                </section>
+
+                <!-- FOOTER : pied de l'article -->
+                <footer>
+                    <p>Footer article n°1</p>
+                </footer>
+            </article>
+
+            <!-- Article 2 -->
+            <article role="article">
+                <header>
+                    <h2>Header article n°2</h2>
+                </header>
+                <section>
+                    <h3>Section 1</h3>
+                    <p>Contenu de la section n°1 de l'article n°2.</p>
+                    <figure>
+                        <img src="./img/pictures.png" alt="pictures">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Section 2</h3>
+                    <p>Contenu de la section n°2 de l'article n°2.</p>
+                </section>
+                <footer>
+                    <p>Footer article n°2</p>
+                </footer>
+            </article>
+
+            <!-- Article 3 -->
+            <article role="article">
+                <header>
+                    <h2>Header article n°3</h2>
+                </header>
+                <section>
+                    <h3>Section 1</h3>
+                    <p>Contenu de la section n°1 de l'article n°3.</p>
+                    <figure>
+                        <img src="./img/touch.png" alt="touch">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Section 2</h3>
+                    <p>Contenu de la section n°2 de l'article n°3.</p>
+                </section>
+                <footer>
+                    <p>Footer article n°3</p>
+                </footer>
+            </article>
+
+            <!-- Article 4 -->
+            <article role="article">
+                <header>
+                    <h2>Header article n°4</h2>
+                </header>
+                <section>
+                    <h3>Section 1</h3>
+                    <p>Contenu de la section n°1 de l'article n°4.</p>
+                    <figure>
+                        <img src="./img/webdev.png" alt="webdev">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Section 2</h3>
+                    <p>Contenu de la section n°2 de l'article n°4.</p>
+                </section>
+                <footer>
+                    <p>Footer article n°4</p>
+                </footer>
+            </article>
+
+            <!-- ASIDE -->
+            <aside role="complementary">
+                <h2>À propos</h2>
+                <p>Contenu de votre barre latérale.</p>
+                <figure>
+                    <img src="./img/frontend.png" alt="frontend">
+                    <figcaption>Front-End</figcaption>
+                </figure>
+                <figure>
+                    <img src="./img/laravel.png" alt="laravel">
+                    <figcaption>Front-End</figcaption>
+                </figure>
+            </aside>
+
+            <!-- DIV INFOS -->
+            <div id="infos" role="article">
+                <p>CETTE ZONE VA RECEVOIR DES INFORMATIONS <span id="ghost">Je suis une zone fantôme</span></p>
+            </div>
+        </main>
+
+
+        <!-- FOOTER : pied de page du site -->
+        <footer id="pied" role="contentinfo">
+            <p>Droits d'auteur © 2023 Nom de l'auteur. Tous droits réservés.</p>
+        </footer>
+
+        <!-- Emplacement des scipt JavaScript -->
+        <!-- <script src="./js/DOM_selection.js"></script> -->
+        <!-- <script src="./js/DOM_manipuler_contenu.js"></script> -->
+        <!-- <script src="./js/DOM_manipuler_css.js"></script> -->
+        <script src="./js/DOM_creer_des_elements.js"></script>
+    </body> 
+
+</html>

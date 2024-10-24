@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VALIDATION DE FORMULAIRE</title>
+    <link rel="stylesheet" href="./formulaire.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div id="success-message"></div>
+      <div id="error-message"></div>
+      <form class="form" id="form">
+        <div class="form__group form__input-wrapper">
+          <label for="pseudo" class="form__label">Pseudo :</label>
+          <input
+            type="text"
+            id="pseudo"
+            class="form__input"
+            name="pseudo"
+            placeholder="Entrer ici votre pseudo."
+          />
+          <span class="form__error" id="pseudoError"></span>
+        </div>
+
+        <div class="form__group form__input-wrapper">
+          <label for="email" class="form__label">Email :</label>
+          <input
+            type="email"
+            id="email"
+            class="form__input"
+            name="email"
+            placeholder="Entrer ici votre email."
+          />
+          <span class="form__error" id="emailError"></span>
+        </div>
+
+        <div class="form__group form__input-wrapper">
+          <label for="password" class="form__label">Mot de passe :</label>
+          <input
+            type="password"
+            id="password"
+            class="form__input"
+            name="password"
+            placeholder="Entrer ici votre mot de passe."
+          />
+          <span class="form__error" id="passwordError"></span>
+        </div>
+
+        <div class="form__group form__input-wrapper">
+          <label for="passwordConfirm" class="form__label"
+            >Confirmez le mot de passe :</label
+          >
+          <input
+            type="password"
+            id="passwordConfirm"
+            class="form__input"
+            name="passwordConfirm"
+            placeholder="Veuillez saisir le même mot de passe."
+          />
+          <span class="form__error" id="passwordConfirmError"></span>
+        </div>
+
+        <div class="form__group form__input-wrapper">
+          <label for="profession" class="form__label">Profil :</label>
+          <select id="profession" class="form__input" name="profession">
+            <option value="">
+              Sélectionnez votre profil qui est le plus proche du votre
+            </option>
+            <option value="developpeur-web">Développeur Web</option>
+            <option value="designer-web">Designer Web</option>
+            <option value="integrateur-web">Intégrateur Web</option>
+            <option value="chef-de-projet">Chef de Projet</option>
+            <option value="consultant-web">Consultant Web</option>
+            <option value="administrateur-reseau">Administrateur Réseau</option>
+            <option value="webmaster">Webmaster</option>
+          </select>
+          <span class="form__error" id="professionError"></span>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label">Langage web le mieux maîtrisé :</label>
+          <div class="form__radio-group">
+            <input
+              type="radio"
+              id="html"
+              name="langage"
+              value="html"
+              class="form__radio"
+            />
+            <label for="html" class="form__radio-label">HTML</label>
+          </div>
+          <div class="form__radio-group">
+            <input
+              type="radio"
+              id="css"
+              name="langage"
+              value="css"
+              class="form__radio"
+            />
+            <label for="css" class="form__radio-label">CSS</label>
+          </div>
+          <div class="form__radio-group">
+            <input
+              type="radio"
+              id="javascript"
+              name="langage"
+              value="javascript"
+              class="form__radio"
+            />
+            <label for="javascript" class="form__radio-label">JavaScript</label>
+          </div>
+          <div class="form__radio-group">
+            <input
+              type="radio"
+              id="php"
+              name="langage"
+              value="php"
+              class="form__radio"
+            />
+            <label for="php" class="form__radio-label">PHP</label>
+          </div>
+          <span class="form__error" id="langageError"></span>
+        </div>
+
+        <div class="form__group form__input-wrapper form__terms">
+          <input
+            type="checkbox"
+            id="terms"
+            class="form__checkbox"
+            name="terms"
+          />
+          <label for="terms" class="form__label form__label--checkbox"
+            >J'accepte les conditions</label
+          >
+          <span class="form__error" id="termsError"></span>
+        </div>
+
+        <div class="form__group">
+          <button type="submit" class="form__button" id="submitButton" disabled>
+            Soumettre
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="formulaire.js"></script>
+  </body>
+</html>

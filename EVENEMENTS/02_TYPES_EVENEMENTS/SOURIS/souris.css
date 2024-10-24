@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  font-size: large;
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e87777;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #a2e877;
+}
+
+button:active {
+  background-color: #eebc61;
+}
+
+button:focus {
+  outline: none;
+}

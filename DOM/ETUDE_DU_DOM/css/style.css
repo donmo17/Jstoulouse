@@ -1,0 +1,264 @@
+/* -----------------------------------------
+                    RESET
+-------------------------------------------*/
+@import url("./reset.css");
+
+/* -----------------------------------------
+                    VARIABLES
+-------------------------------------------*/
+:root {
+  --color1: #feffdf;
+  --color2: #dde0ab;
+  --color3: #97cba9;
+  --color4: #668ba4;
+}
+
+/* -----------------------------------------
+                    BODY 
+-------------------------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+/* -----------------------------------------
+                    HEADER
+-------------------------------------------*/
+header {
+  background-color: var(--color3);
+  color: #fff;
+  padding: 2rem;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+/* -----------------------------------------
+              BARRE DE NAVIGATION
+-------------------------------------------*/
+nav {
+  background-color: var(--color1);
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li:nth-child(2) {
+  color: var(--color4);
+  font-size: 4rem;
+  font-weight: bold;
+  order: -1;
+}
+
+nav li:nth-child(3) {
+  margin-left: auto;
+}
+
+nav li:first-child {
+  order: -2;
+}
+
+nav li#logo img {
+  max-height: 9rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* -----------------------------------------
+                   MAIN
+-------------------------------------------*/
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--color1);
+}
+
+main h1 {
+  font-size: 5rem;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+/* -----------------------------------------
+              BANNER codé en BEM
+-------------------------------------------*/
+#banner {
+  grid-column: 1/-1;
+  background-color: var(--color3);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.banner__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  gap: 2rem;
+}
+
+.banner__title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner__button {
+  background-color: #fff;
+  border-radius: 1rem;
+  color: #333;
+  padding: 1.5rem 2.8rem;
+  margin: 1rem;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  -o-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.banner__button--primary {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.banner__button--secondary {
+  background-color: #333;
+  color: #fff;
+}
+
+.banner__button--updated {
+  background-color: #0a28d2;
+  color: #fff;
+}
+
+.banner__button:hover {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+/* -----------------------------------------
+                 ARTICLES 
+-------------------------------------------*/
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+article header {
+  background-color: var(--color4);
+  text-align: center;
+  padding: 1rem;
+}
+
+article h2 {
+  font-size: 2.4rem;
+}
+
+article h3 {
+  font-size: 1.8rem;
+}
+
+article footer {
+  background-color: var(--color2);
+  text-align: left;
+  padding: 1rem;
+}
+
+article footer p {
+  font-size: 2rem;
+  color: var(--color4);
+}
+
+div#infos {
+  grid-column: 1 / -1;
+  background-color: #bab2bb;
+}
+
+div#infos p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* -----------------------------------------
+                    ASIDE
+-------------------------------------------*/
+aside {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+aside h2 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-bottom: solid 5px var(--color3);
+}
+
+aside p {
+  line-height: 1.5;
+}
+
+aside figure figcaption {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* -----------------------------------------
+                   FOOTER
+-------------------------------------------*/
+footer {
+  background-color: var(--color3);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  grid-row: 3;
+}
+
+#ghost {
+  display: none;
+}
+
+.nouvelle-classe {
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "pays": "France",
+        "capitale": "Paris",
+        "superficie": 551695,
+        "population": 67000000
+    },
+    {
+        "pays": "Australie",
+        "capitale": "Camberra",
+        "superficie": 7692024,
+        "population": 25000000
+    }
+]

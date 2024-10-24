@@ -1,0 +1,1 @@
+Données issues du fichier data.txt.

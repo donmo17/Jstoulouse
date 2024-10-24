@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STOP_PROPAGATION</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="parent" style="padding: 20px; background-color: lightblue">
+      Parent
+      <div id="child" style="padding: 20px; background-color: lightgreen">
+        Child
+      </div>
+    </div>
+
+    <!-- <script src="./stop_propagation.js"></script> -->
+    <script src="./stop_immediate_propagation.js"></script>
+  </body>
+</html>

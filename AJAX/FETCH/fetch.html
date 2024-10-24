@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FETCH</title>
+    <style>
+      *,
+      ::after,
+      ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #resultat {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        width: 400px;
+      }
+
+      button {
+        margin: 10px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+        width: 400px;
+        font-size: 20px;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      #btnTxt {
+        background-color: rgb(110, 12, 71);
+      }
+
+      #btnTxt:hover {
+        background-color: rgb(114, 31, 85);
+      }
+
+      #btnJSONObj {
+        background-color: rgb(12, 110, 37);
+      }
+
+      #btnJSONObj:hover {
+        background-color: rgb(31, 114, 70);
+      }
+      #btnJSONArr {
+        background-color: rgb(12, 37, 110);
+      }
+
+      #btnJSONArr:hover {
+        background-color: rgb(31, 70, 114);
+      }
+
+      #btnAPI {
+        background-color: #f00;
+      }
+
+      #btnAPI:hover {
+        background-color: #f55;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>https://picsum.photos/list</h1>
+      <div id="resultat"></div>
+
+      <button type="button" id="btnTxt">Fetch data (texte)</button>
+      <button type="button" id="btnJSONObj">Fetch data (objet JSON)</button>
+      <button type="button" id="btnJSONArr">
+        Fetch data (tableau d'objets JSON)
+      </button>
+      <button type="button" id="btnAPI">Fetcher data (API)</button>
+    </main>
+    <!-- <script src="./fetch_txt.js"></script> -->
+    <!-- <script src="./fetch_json_obj.js"></script> -->
+    <!-- <script src="./fetch_json_arr.js"></script> -->
+    <script src="./fetch_json_api.js"></script>
+  </body>
+</html>

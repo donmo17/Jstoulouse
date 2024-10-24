@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THIS</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      ul {
+        font-size: 20px;
+      }
+
+      .done {
+        color: red;
+        text-decoration: line-through;
+        font-weight: bold;
+      }
+      button {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="taskList">
+      <li>
+        <span>Idée 1</span>
+        <button>Terminé</button>
+      </li>
+      <li>
+        <span>Idée 2</span>
+        <button>Terminé</button>
+      </li>
+      <li>
+        <span>Idée 3</span>
+        <button>Terminé</button>
+      </li>
+    </ul>
+
+    <script>
+      document.querySelectorAll("#taskList li").forEach(function (task) {
+        task.querySelector("button").addEventListener("click", function () {
+          // 'this' fait référence au bouton qui a déclenché l'événement
+          const span = this.previousElementSibling;
+          span.classList.toggle("done");
+          console.log(this); // Affiche le bouton dans la console
+        });
+      });
+    </script>
+  </body>
+</html>

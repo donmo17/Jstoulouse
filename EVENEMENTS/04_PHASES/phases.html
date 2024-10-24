@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHASES</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .parent {
+        width: 300px;
+        height: 300px;
+        background-color: #ce6868;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .enfant {
+        width: 250px;
+        height: 250px;
+        background-color: #9dcd84;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bouton {
+        width: 200px;
+        height: 200px;
+        background-color: #7fd1f1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        font-size: 1.5rem;
+      }
+
+      .termine {
+        text-decoration: line-through;
+      }
+
+      img {
+        height: 300px;
+      }
+
+      #monFormulaire {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      #monFormulaire label {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      #monFormulaire label input {
+        width: 200px;
+      }
+
+      #monFormulaire button {
+        width: 100px;
+        height: 30px;
+        background-color: #7fd1f1;
+        border: none;
+      }
+
+      #monFormulaire button:hover {
+        background-color: #185f7b;
+        color: #fff;
+      }
+
+      #monFormulaire button:active {
+        background-color: #f1ae7f;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <div class="enfant">
+        <button class="bouton">CAPTURE</button>
+      </div>
+    </div>
+
+    <div>
+      <img src="./phases.WEBP" alt="" />
+    </div>
+
+    <div class="parent">
+      <div class="enfant">
+        <button class="bouton">BUBBLING</button>
+      </div>
+    </div>
+
+    <script src="./phases.js"></script>
+  </body>
+</html>

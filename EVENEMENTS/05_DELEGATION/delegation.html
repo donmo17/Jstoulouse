@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DELEGATION</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      ul {
+        font-size: 20px;
+      }
+
+      .done {
+        color: red;
+        text-decoration: line-through;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul id="item-list1">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+
+    <div id="item-list2">
+      <p>Item 1</p>
+      <span>Item 2</span>
+    </div>
+
+    <ul id="taskList">
+      <li>
+        <input type="checkbox" class="taskCheckbox" />
+        <span>Acheter du lait</span>
+      </li>
+      <li>
+        <input type="checkbox" class="taskCheckbox" />
+        <span>Faire la lessive</span>
+      </li>
+      <li>
+        <input type="checkbox" class="taskCheckbox" />
+        <span>Aller chez le dentiste</span>
+      </li>
+      <li>
+        <input type="checkbox" class="taskCheckbox" />
+        <span>Payer les factures</span>
+      </li>
+    </ul>
+
+    <script src="./delegation.js"></script>
+  </body>
+</html>

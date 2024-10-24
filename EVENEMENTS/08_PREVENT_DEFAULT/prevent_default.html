@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PREVENT_DEFAULT</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Prévention du Comportement par Défaut en JavaScript</h1>
+
+    <p><a href="https://www.example.com" id="monLien">Cliquez-moi !</a></p>
+
+    <form id="monFormulaire" action="verif.php">
+      <input type="text" id="nom" placeholder="Entrez votre nom" />
+      <input type="submit" value="Envoyer" />
+    </form>
+
+    <script>
+      const link = document.getElementById("monLien");
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+      });
+
+      const form = document.getElementById("monFormulaire");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

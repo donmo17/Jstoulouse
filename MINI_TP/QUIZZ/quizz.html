@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZZ</title>
+    <link rel="stylesheet" href="./css/quizz.css" />
+  </head>
+
+  <body>
+    <h1>Quiz JavaScript</h1>
+    <form id="quiz-form">
+      <ol>
+        <li>
+          <p>Question 1 : Quelle est la capitale de l'Australie' ?</p>
+          <input
+            type="radio"
+            name="q1"
+            value="Sydney"
+            aria-label="sydney"
+          />Sydney
+          <input
+            type="radio"
+            name="q1"
+            value="Melbourne"
+            aria-label="melbourne"
+          />
+          Melbourne
+          <input
+            type="radio"
+            name="q1"
+            value="Camberra"
+            aria-label="camberra"
+          />
+          Camberra
+        </li>
+        <li>
+          <p>Question 2 : Qu'est ce que l'OULIPO' ?</p>
+          <input type="radio" name="q2" value="non" /> un style musical
+          <input type="radio" name="q2" value="oui" /> un style littéraire
+          <input type="radio" name="q2" value="non" /> Un plat typique
+        </li>
+        <li>
+          <p>Question 3 : Combien de pattes a une araignée ?</p>
+          <input type="radio" name="q3" value="6" /> 6
+          <input type="radio" name="q3" value="8" /> 8
+          <input type="radio" name="q3" value="10" /> 10
+        </li>
+        <li>
+          <p>Question 4 : Quelle est la planète la plus proche du Soleil ?</p>
+          <input type="radio" name="q4" value="Vénus" /> Vénus
+          <input type="radio" name="q4" value="Mars" /> Mars
+          <input type="radio" name="q4" value="Mercure" /> Mercure
+        </li>
+        <li>
+          <p>
+            Question 5 : Quelle est la plus grande planète du système solaire ?
+          </p>
+          <input type="radio" name="q5" value="Jupiter" /> Jupiter
+          <input type="radio" name="q5" value="Saturne" /> Saturne
+          <input type="radio" name="q5" value="Mars" /> Mars
+        </li>
+      </ol>
+      <input type="submit" value="Vérifier les réponses" />
+    </form>
+
+    <div id="result"></div>
+
+    <!-- <script src="./js/quizz.js"></script> -->
+
+    <script src="./js/quizz2.js"></script>
+  </body>
+</html>
